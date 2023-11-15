@@ -1,13 +1,20 @@
 import { Route, Routes } from 'react-router-dom';
-import Initial from './pages/Initial';
-import Counter from './pages/Counter';
+import { ThemeProvider } from 'styled-components';
+import Headlines from './pages/Headlines';
+import { GlobalStyle } from './styles/global-styles';
+import theme from './styles/themes/theme';
+import Header from './components/Header';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={ <Initial /> } />
-      <Route path="/counter" element={ <Counter /> } />
-    </Routes>
+    <ThemeProvider theme={ theme }>
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={ <Header /> }>
+          <Route index element={ <Headlines /> } />
+        </Route>
+      </Routes>
+    </ThemeProvider>
   );
 }
 
