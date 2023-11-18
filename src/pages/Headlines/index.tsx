@@ -1,5 +1,12 @@
+import TopNotice from '../../components/TopNotice';
+
 function Headlines() {
-  return (<h1>headlines</h1>);
+  return (
+    <>
+      <TopNotice />
+      <section>Ok</section>
+    </>
+  );
 }
 
 export default Headlines;
