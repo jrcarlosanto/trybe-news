@@ -1,11 +1,9 @@
 export default {
   colors: {
-    light_gray: '#AEAEAE',
-    dark_gray: '#444955',
-    black: '#1A1B1C',
-    black_000: '#000',
-    black_2E3035: '#2E3035',
+    black: '#2A2A2A',
     white: '#FFFFFF',
-    yellow: '#FAE60A',
+    green: '#05D465',
+    red: '#C31815',
+    shadow: '#00000033',
   },
 };

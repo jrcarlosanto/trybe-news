@@ -9,6 +9,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Poller One;
   }
 
+  body {
+    background: #F1F2F3;
+  }
+  
   bottom {
     transition: 200ms ease-in-out 0.025s;
   }
