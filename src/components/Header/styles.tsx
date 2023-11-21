@@ -21,3 +21,12 @@ export const Div = styled.div`
     letter-spacing: 1.6 px;
   }
 `;
+
+export const Section = styled.section`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Main = styled.main`
+  width: 85%;
+`;

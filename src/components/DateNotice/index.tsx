@@ -1,4 +1,3 @@
-import moment from 'moment';
 import { P } from './styles';
 import { diffDays } from '../../utils/diffDays';
 
