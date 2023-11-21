@@ -8,7 +8,7 @@ import { FAVORITE, SEARCHE_SUM_QUANTITY } from '../../utils/constants';
 
 function ListNotice() {
   const { listNotice, loadingList, setQuantity, quantity,
-    setLoadingList, scroll, choiceList } = useContext(NoticesContext);
+    setLoadingList, choiceList } = useContext(NoticesContext);
   // const loaderRef = useRef(null);
   const options = {};
   const [ref, inView] = useInView(options);

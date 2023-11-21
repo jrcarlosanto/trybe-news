@@ -1,4 +1,4 @@
-import ListNotice from '../../components/ListMotices';
+import ListNotice from '../../components/ListNotices';
 import Toolbar from '../../components/Toolbar';
 import TopNotice from '../../components/TopNotice';
 

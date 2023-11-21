@@ -7,7 +7,15 @@ export const InputStyle = styled.input`
   border:  1px  solid ${(props) => props.theme.colors.black};
   padding-left: 5px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 29.4px;
   letter-spacing: 2%;
+
+  @media (max-width: 390px) {
+    width: 220px;
+  }
+
+  @media (max-width: 460px) and (min-width: 391px) {
+    width: 250px;
+  }
 `;

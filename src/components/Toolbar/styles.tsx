@@ -13,6 +13,10 @@ export const Nav = styled.nav`
 export const NavFilter = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 552px) {
+    width: 200px;
+  }
 `;
 
 export const Button = styled.button`
@@ -33,6 +37,7 @@ export const ButtonOpenSearch = styled.button`
   align-items: center;
   border: 0;
   background-color: transparent;
+  margin-left: 10px;
 `;
 
 export const Img = styled.img`

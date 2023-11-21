@@ -12,6 +12,14 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 409px) {
+    height: 400px;
+  }
+  
+  @media (min-width: 410px) {
+    height: 380px;
+  }
+
   & h3 {
     font-family: IBM Plex Serif;
     font-size: 18px;
@@ -21,6 +29,10 @@ export const Card = styled.div`
     text-align: left;
     margin-bottom: 5px;
     height: 408px;
+
+    @media (max-width: 467px) {
+      font-size: 16px;
+    }
   }
 
   & hr {
@@ -40,6 +52,14 @@ export const P = styled.p`
     text-align: left;
     margin-bottom: 25px;
     height: 408px;
+    
+    @media (max-width: 409px) {
+      font-size: 12.5px;
+    }
+
+    @media (mim-width: 410px) and (max-width: 467px) {
+      font-size: 13px;
+    }
 `;
 
 export const DivDateButton = styled.div`

@@ -28,10 +28,9 @@ function Toolbar() {
 
   const showSearch = () => {
     setSearchButton(!searchButton);
-    setChoiceList('');
   };
 
-  const underlined = 'underline red';
+  const underlined = 'underline #C31815 2px solid';
   return (
     <>
       <Nav>

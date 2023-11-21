@@ -6,9 +6,6 @@ export const Section = styled.section`
   align-items: center;
   justify-content: space-evenly;
 
-  @media (max-width: 690px) {
-     font-size: 60%;
-  }
 `;
 
 export const Img = styled.img`
@@ -18,9 +15,19 @@ export const Img = styled.img`
   border: 1px solid ${(props) => props.theme.colors.shadow};
   box-shadow: 0px 4px 4px 0px ${(props) => props.theme.colors.shadow};
   
-  @media (max-width: 690px) {
+  @media (max-width: 468px) {
     width: 90%;
-    height: 350px;
+    height: 210px;
+  }
+
+  @media (max-width: 580px) and (min-width: 469px) {
+    width: 90%;
+    height: 250px;
+  }
+
+  @media (max-width: 680px) and (min-width: 581px) {
+    width: 90%;
+    height: 280px;
   }
 `;
 
@@ -37,6 +44,18 @@ export const NoticeCard = styled.div`
     text-align: left;
     color: ${(props) => props.theme.colors.black};
     margin-bottom: 4px;
+
+    @media (max-width: 390px) {
+      font-size: 25px;
+    }
+
+    @media (min-width: 390px) and (max-width: 520) {
+      font-size: 28px;
+    }
+
+    @media (max-width: 389) {
+      font-size: 26px;
+    }
   }
 
   & div {
