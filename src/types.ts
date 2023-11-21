@@ -11,5 +11,16 @@ export type Notice = {
 export type NoticesContextType = {
   listNotice: Notice[];
   loading: boolean;
-  newNotice: Notice;
+  youngestNotice: Notice;
+  setLoadingList: (value: boolean) => void;
+  loadingList: boolean;
+  setChoiceList: (value: string) => void;
+  choiceList: string;
+  quantity: number;
+  setQuantity: (value: number) => void;
+  search: string;
+  setSearch: (value: string) => void;
+  scroll: boolean;
+  setReloadYoungestNotice: (value: boolean) => void;
+  reloadYoungestNotice: boolean;
 };
