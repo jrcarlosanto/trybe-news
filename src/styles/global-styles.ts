@@ -20,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   button:hover {
     transition: 200ms ease-in-out 0.025s;
     cursor: pointer;
+    opacity: 0.8;
   }
 
   button:disabled {
