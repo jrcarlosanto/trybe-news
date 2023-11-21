@@ -1,13 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import NoticesContext from '../../context/NoticesContext';
-import Button from '../Button';
+import Button from '../ButtonRead';
 import DateNotice from '../DateNotice';
 import { Img, Intro, LastNoticeInfo, NoticeCard, Section } from './styles';
 import Favorite from '../Favorite';
 
 function TopNotice() {
-  const { newNotice } = useContext(NoticesContext);
-  const { imagens, titulo, introducao, link, data_publicacao, id, type } = newNotice;
+  const { youngestNotice } = useContext(NoticesContext);
+  const { imagens, titulo, introducao, link, data_publicacao, id, type } = youngestNotice;
 
   return (
     <Section>
