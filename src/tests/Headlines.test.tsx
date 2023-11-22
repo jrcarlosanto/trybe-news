@@ -269,4 +269,18 @@ describe('<Headlines />', () => {
     const list2 = await screen.findAllByTestId(listElements);
     expect(list2).toHaveLength(18);
   });
+
+  it('Adicionar a notícia no topo com lista de Favoritos selecionada.', async () => {
+    const { user } = renderWithRouter(<App />, { route: '/' });
+    const loading = await screen.findByAltText('loading');
+    await waitFor(() => expect(loading).not.toBeInTheDocument());
+
+    const button = screen.getByAltText('Toggle theme');
+
+    const title = screen.getByText('TRIBE NEWS');
+    expect(title).toHaveStyle('color: #CACDE8');
+
+    await user.click(button);
+    expect(title).toHaveStyle('color: #FFFFFF');
+  });
 });

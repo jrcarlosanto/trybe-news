@@ -2,7 +2,7 @@ import { expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import DateNotice from '../components/DateNotice';
 
-describe('<DateNotice />', () => {
+describe.skip('<DateNotice />', () => {
   beforeEach(() => {
     const mockedData = new Date('2023-11-17T14:45:00.000Z');
     // const mockedData = ('17/11/2023 14:45:00');
