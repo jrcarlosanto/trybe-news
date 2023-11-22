@@ -9,7 +9,7 @@ export const diffDays = (data_publicacao: string) => {
   let text = '';
 
   if (days < 1) {
-    text = 'Hoje';
+    text = 'a menos de 1 dia';
   } else if (days < 2) {
     text = '1 dia atrás';
   } else {

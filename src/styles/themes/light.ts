@@ -3,7 +3,7 @@ export default {
     primaryText: '#2A2A2A',
     secondaryText: '#FFFFFF',
     primary: '#FFFFFF',
-    secondary: '#4D5066',
+    secondary: '#FFFFFF',
     background: '#F1F2F3',
     borderColor: '#e6e5e9',
     backgroundHeader: '#2A2A2A',

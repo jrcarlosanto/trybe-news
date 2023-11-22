@@ -14,7 +14,7 @@ describe('<Headlines />', () => {
     const mockInitial = vi.spyOn(getNotices, 'getNoticesAndReleases');
     mockInitial.mockImplementationOnce(() => Promise.resolve(noticesAndReleases));
     mockInitial.mockImplementationOnce(() => Promise.resolve(noticesAndReleases));
-    vi.spyOn(getDay, 'diffDays').mockReturnValue('Hoje');
+    vi.spyOn(getDay, 'diffDays').mockReturnValue('a menos de 1 dia');
     // vi.spyOn(window, 'Date').mockReturnValue('17/11/2023 14:45:00');
     // const mockedData = new Date('2023-11-17T00:00:00.000Z');
     // vi.spyOn(global, 'Date').mockImplementation(() => mockedData);

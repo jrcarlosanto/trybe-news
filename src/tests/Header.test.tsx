@@ -11,7 +11,7 @@ describe('<Header />', () => {
   it('Verificar se o header tem a imagem e o título.', async () => {
     const mockInitial = vi.spyOn(getNotices, 'getNoticesAndReleases');
     mockInitial.mockImplementation(() => Promise.resolve(noticesAndReleases));
-    vi.spyOn(getDay, 'diffDays').mockReturnValue('Hoje');
+    vi.spyOn(getDay, 'diffDays').mockReturnValue('nova');
     /* window.IntersectionObserver = vi.fn().mockImplementation(() => ({
       observe: () => null,
     })); */

@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
-import nav from '../../images/nav.svg';
+import navBlack from '../../images/nav-dark.svg';
+import navWhite from '../../images/nav-white.svg';
 import { Button, ButtonOpenSearch, Img, Nav, NavFilter,
   SearcDiv, Search } from './styles';
 import NoticesContext from '../../context/NoticesContext';
@@ -7,7 +8,9 @@ import { FAVORITE, MOST_RECENT, NOTICE, RELEASE,
   SEARCHE_SUM_QUANTITY } from '../../utils/constants';
 import Input from '../Input';
 import ButtonSearch from '../ButtonSearch';
-import searchIcon from '../../images/searchIcon.svg';
+import searchIconBlack from '../../images/searchIcon-black.svg';
+import searchIconWhite from '../../images/searchIcon-white.svg';
+import { getTheme } from '../../utils/theme';
 
 function Toolbar() {
   const { setLoadingList, setChoiceList, choiceList,
@@ -30,6 +33,7 @@ function Toolbar() {
     setSearchButton(!searchButton);
   };
 
+  const choiceIcon = getTheme() === 'dark';
   const underlined = 'underline #C31815 2px solid';
   return (
     <>
@@ -67,10 +71,14 @@ function Toolbar() {
             data-testid="search"
             onClick={ showSearch }
           >
-            <Img src={ searchIcon } alt="search" />
+            { choiceIcon
+              ? <Img src={ searchIconWhite } alt="search" />
+              : <Img src={ searchIconBlack } alt="search" /> }
           </ButtonOpenSearch>
         </NavFilter>
-        <img src={ nav } alt="nav icon" />
+        { choiceIcon
+          ? <img src={ navWhite } alt="nav icon" />
+          : <img src={ navBlack } alt="nav icon" />}
       </Nav>
       { searchButton && (
         <SearcDiv>

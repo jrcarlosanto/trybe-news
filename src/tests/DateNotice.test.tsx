@@ -17,14 +17,14 @@ describe('<DateNotice />', () => {
     vi.resetAllMocks();
   });
 
-  it('Notícia de mesmo dia', () => {
+  it('Notícia com mesnos de 1 dia', () => {
     render(
       <ThemeProvider theme={ dark }>
         <DateNotice data_publicacao="17/11/2023 14:46:00" />
       </ThemeProvider>,
     );
 
-    const date = screen.getByText('Hoje');
+    const date = screen.getByText('a menos de 1 dia');
     expect(date).toBeInTheDocument();
   });
 

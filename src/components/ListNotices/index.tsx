@@ -43,32 +43,35 @@ function ListNotice() {
     if (inView && (quantity <= listFavorite.length || choiceList !== FAVORITE)) {
       setQuantity(quantity + SEARCHE_SUM_QUANTITY);
       setLoadingList(true);
-      console.log(quantity);
     }
   }, [inView]);
 
-  if (loadingList) {
+  if (loadingList && quantity <= SEARCHE_SUM_QUANTITY) {
     return (<Loading />);
   }
 
   return (
-    <Section>
-      { listNotice.map(({ imagens, titulo, introducao,
-        link, data_publicacao, id, type }) => (
-          <CardNotice
-            key={ id }
-            data_publicacao={ data_publicacao }
-            id={ id }
-            imagens={ imagens }
-            introducao={ introducao }
-            titulo={ titulo }
-            type={ type }
-            link={ link }
-          />)) }
-      {(listFavorite.length === 0 && choiceList === FAVORITE) && <H2>Lista Vazia</H2>}
-      {/* <p ref={ loaderRef } /> */}
-      <p ref={ ref } data-testid="scroll" />
-    </Section>
+    <>
+      <Section>
+        { listNotice.map(({ imagens, titulo, introducao,
+          link, data_publicacao, id, type }) => (
+            <CardNotice
+              key={ id }
+              data_publicacao={ data_publicacao }
+              id={ id }
+              imagens={ imagens }
+              introducao={ introducao }
+              titulo={ titulo }
+              type={ type }
+              link={ link }
+            />)) }
+        {(listFavorite.length === 0 && choiceList === FAVORITE) && <H2>Lista Vazia</H2>}
+        {/* <p ref={ loaderRef } /> */}
+        <p ref={ ref } data-testid="scroll" />
+      </Section>
+      {(loadingList && quantity > SEARCHE_SUM_QUANTITY) && (
+        <Loading styledHeight={ { height: '100px' } } />)}
+    </>
   );
 }
 

@@ -10,12 +10,14 @@ function Input() {
     setSearch(value);
   };
 
-  return (<InputStyle
-    value={ search }
-    type="text"
-    onChange={ change }
-    data-testid="input"
-  />);
+  return (
+    <InputStyle
+      value={ search }
+      type="text"
+      onChange={ change }
+      data-testid="input"
+    />
+  );
 }
 
 export default Input;

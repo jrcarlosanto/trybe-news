@@ -4,6 +4,7 @@ export const HeaderNav = styled.header`
   display: flex;
   margin-bottom: 20px;
   height: 80px;
+  background-color: ${(props) => props.theme.colors.backgroundHeader};
 `;
 
 export const Div = styled.div`
@@ -11,7 +12,6 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: ${(props) => props.theme.colors.backgroundHeader};
 
   h1 {
     color: ${(props) => props.theme.colors.title};
@@ -36,7 +36,11 @@ export const ButtonTheme = styled.button`
   background: none;
   cursor: pointer;
   background-color: ${(props) => props.theme.colors.backgroundHeader};
-  padding-right: 40px;
+  margin-right: 40px;
+  
+  @media (max-width: 430px) {
+    margin-right: 15px;
+  }
 
   & :hover {
     background-color: ${(props) => props.theme.colors.backgroundHeader};

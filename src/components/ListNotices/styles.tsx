@@ -16,5 +16,5 @@ export const H2 = styled.h2`
   letter-spacing: 0em;
   text-align: left;
   color: ${(props) => props.theme.colors.primaryText};
-  margin: 20px 0;
+  margin: 60px 0;
 `;

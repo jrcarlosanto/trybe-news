@@ -1,11 +1,13 @@
 import { useContext, useEffect, useState } from 'react';
 import { Notice } from '../../types';
 import { getIsFavorite, removeIsFavorite, setIsFavorite } from '../../utils/favorite';
-import heartEmpty from '../../images/heart-empty.svg';
+import heartEmptyBlack from '../../images/heart-empty-black.svg';
+import heartEmptyWhite from '../../images/heart-empty-white.svg';
 import heartFull from '../../images/heart-full.svg';
 import { Button, Img } from './styles';
 import NoticesContext from '../../context/NoticesContext';
 import { FAVORITE } from '../../utils/constants';
+import { getTheme } from '../../utils/theme';
 
 function Favorite({ data_publicacao, id, imagens, introducao, titulo, type,
   link }: Notice) {
@@ -42,6 +44,8 @@ function Favorite({ data_publicacao, id, imagens, introducao, titulo, type,
     setFavorite(getIsFavorite(id));
   }, [getIsFavorite(id)]);
 
+  const choiceIcon = getTheme() === 'dark';
+
   return (
     <div>
       { favorite
@@ -58,7 +62,9 @@ function Favorite({ data_publicacao, id, imagens, introducao, titulo, type,
             onClick={ favoriteNotice }
             data-testid="button-add"
           >
-            <Img src={ heartEmpty } alt="heart empty" />
+            { choiceIcon
+              ? <Img src={ heartEmptyWhite } alt="heart empty" />
+              : <Img src={ heartEmptyBlack } alt="heart empty" />}
           </Button>
         ) }
     </div>
