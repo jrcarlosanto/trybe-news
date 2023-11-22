@@ -1,7 +1,6 @@
-import { fireEvent, screen, waitFor } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import { vi } from 'vitest';
 import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils';
-import { defaultFallbackInView } from 'react-intersection-observer';
 import App from '../App';
 import { renderWithRouter } from '../utils/renderWithRouter';
 import * as getNotices from '../services/getNotices';
@@ -243,7 +242,7 @@ describe('<Headlines />', () => {
   });
 
   it('Testar scroll infinito.', async () => {
-    const { user } = renderWithRouter(<App />, { route: '/' });
+    renderWithRouter(<App />, { route: '/' });
     const loading = await screen.findByAltText('loading');
     await waitFor(() => expect(loading).not.toBeInTheDocument());
 

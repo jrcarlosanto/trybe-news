@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef } from 'react';
+import { useContext, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import NoticesContext from '../../context/NoticesContext';
 import Loading from '../Loading';

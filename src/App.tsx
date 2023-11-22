@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import Headlines from './pages/Headlines';
 import { GlobalStyle } from './styles/global-styles';
 import Header from './components/Header';
