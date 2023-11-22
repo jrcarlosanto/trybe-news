@@ -7,4 +7,5 @@ export const P = styled.p`
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
+  color: ${(props) => props.theme.colors.primaryText};
 `;

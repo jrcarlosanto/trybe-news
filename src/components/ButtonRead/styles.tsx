@@ -11,6 +11,7 @@ export const ButtonStyled = styled.button`
    border: 0;
    border-radius: 5px;
    opacity: 0.9;
+   color: ${(props) => props.theme.colors.primary};
    
    &:hover {
     opacity: 0.7;

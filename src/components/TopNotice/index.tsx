@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import NoticesContext from '../../context/NoticesContext';
 import Button from '../ButtonRead';
 import DateNotice from '../DateNotice';

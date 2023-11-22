@@ -7,12 +7,14 @@ export const Main = styled.main`
   align-items: center;
   height: 100vh;
   width: 100%;
-  
+  color: ${(props) => props.theme.colors.primaryText};
+
   & h1 {
     margin-bottom: 10px;
   }
 
   & a {
     margin-top: 10px;
+    color: ${(props) => props.theme.colors.secondary};
   }
 `;

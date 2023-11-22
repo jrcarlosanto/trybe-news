@@ -42,7 +42,7 @@ export const NoticeCard = styled.div`
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
-    color: ${(props) => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.primaryText};
     margin-bottom: 4px;
 
     @media (max-width: 390px) {
@@ -82,5 +82,5 @@ export const Intro = styled.p`
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
-  color: ${(props) => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.primaryText};
 `;

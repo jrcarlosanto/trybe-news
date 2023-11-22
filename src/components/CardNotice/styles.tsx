@@ -5,7 +5,7 @@ export const Card = styled.div`
   height: 331px;
   border-radius: 5px;
   margin: 10px;
-  background-color: ${(props) => props.theme.colors.white};
+  background-color: ${(props) => props.theme.colors.primary};
   padding: 15px;
   box-shadow: 0px 4px 4px 0px ${(props) => props.theme.colors.shadow};
   display: flex;
@@ -29,6 +29,7 @@ export const Card = styled.div`
     text-align: left;
     margin-bottom: 5px;
     height: 408px;
+    color: ${(props) => props.theme.colors.primaryText};
 
     @media (max-width: 467px) {
       font-size: 16px;
@@ -37,7 +38,7 @@ export const Card = styled.div`
 
   & hr {
     margin-top: 15px;
-    color: ${(props) => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.primaryText};
     opacity: 0.1px;
     margin-bottom: 10px;
   }
@@ -52,6 +53,7 @@ export const P = styled.p`
     text-align: left;
     margin-bottom: 25px;
     height: 408px;
+    color: ${(props) => props.theme.colors.primaryText};
     
     @media (max-width: 409px) {
       font-size: 12.5px;

@@ -1,4 +1,4 @@
-export default {
+/* export default {
   colors: {
     black: '#2A2A2A',
     white: '#FFFFFF',
@@ -7,3 +7,4 @@ export default {
     shadow: '#00000033',
   },
 };
+*/
