@@ -24,7 +24,7 @@ Esse é um projeto criado com as principais tecnologias utilizadas no módulo de
 ## Funcionalidades
 
 - Reume as noticias da [API gratuita de notícias do IBGE em sua versão 3](https://servicodados.ibge.gov.br/api/docs/noticias?versao=3) para fazer uma listagem com as notícias mais recentes.
-- O usuario pode favoritar as suas noticias favoritas.
+- O usuario pode favoritar as suas notícias favoritas.
 - O usuario pode fazer uma busca por filtro.
 
 ## Layout
@@ -40,13 +40,13 @@ O layout da aplicação está disponível no Figma:
 #### Dark Theme
 
 <p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-web-dark.png" width="200px">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-web-dark.png" width="600px">
 </p>
 
 #### Light Theme
 
 <p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-web-light.png" width="200px">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-web-light.png" width="600px">
 </p>
 
 ### Mobile
