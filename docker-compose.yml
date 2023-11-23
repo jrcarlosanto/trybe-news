@@ -1,0 +1,12 @@
+version: '3'
+services:
+  frontend:
+    build: .
+    container_name: trybe-news
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/app
+    restart: always
+    entrypoint: ['npm', 'run']
+    command: [ 'docker']

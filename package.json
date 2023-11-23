@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "coverage": "vitest run --coverage",
     "dev": "vite --open",
+    "docker": "vite",
     "lint": "eslint -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
     "preview": "vite preview",
     "test": "vitest"
