@@ -65,12 +65,12 @@ function ListNotice() {
               type={ type }
               link={ link }
             />)) }
-        {(listFavorite.length === 0 && choiceList === FAVORITE) && <H2>Lista Vazia</H2>}
+        {listNotice.length === 0 && <H2>Lista Vazia</H2>}
         {/* <p ref={ loaderRef } /> */}
         <p ref={ ref } data-testid="scroll" />
       </Section>
-      {(loadingList && quantity > SEARCHE_SUM_QUANTITY) && (
-        <Loading styledHeight={ { height: '100px' } } />)}
+      {(loadingList && quantity >= SEARCHE_SUM_QUANTITY) && (
+        <Loading styledHeight={ { height: '10px' } } />)}
     </>
   );
 }
