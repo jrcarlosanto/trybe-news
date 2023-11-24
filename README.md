@@ -27,6 +27,7 @@ Esse é um projeto criado com as principais tecnologias utilizadas no módulo de
 - Reume as noticias da [API gratuita de notícias do IBGE em sua versão 3](https://servicodados.ibge.gov.br/api/docs/noticias?versao=3) para fazer uma listagem com as notícias mais recentes.
 - O usuario pode favoritar as suas notícias favoritas.
 - O usuario pode fazer uma busca por filtro.
+- A lista tem scroll infinito.
 
 ## Layout
 
@@ -75,7 +76,7 @@ O layout da aplicação está disponível no Figma:
 ## Como executar o projeto
 
 Este projeto pode ser executado de duas formas:
-1. VSCode
+1. Vite
 2. Docker Compose
 
 ### Pré-requisitos
