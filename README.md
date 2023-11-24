@@ -19,6 +19,7 @@ Tabela de conteúdos
      * [Testes)](#user-content--testes)
    * [Deploy](#-deploy)
    * [Tecnologias](#-tecnologias)
+   * [Autor](#-autor)
    * [Licença](#user-content--licença)
 <!--te-->
 
@@ -163,7 +164,8 @@ $ docker-compose down
 
 ## Autor
 
- <sub><b>[Carlos Antonio Sales de Oliveira Junior](https://github.com/jrcarlosanto)</b></sub>
+Carlos Antonio Sales de Oliveira Junior
+[Perfil GitHub](https://github.com/jrcarlosanto)
 
 ## Licença
 
