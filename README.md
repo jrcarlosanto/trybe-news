@@ -7,20 +7,20 @@
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades](#-funcionalidades)
-   * [Layout](#-layout)
+   * [Sobre o projeto](#sobre-o-projeto)
+   * [Funcionalidades](#funcionalidades)
+   * [Layout](#layout)
      * [Web](#web)
      * [Mobile](#mobile)
-   * [Como executar o projeto](#-como-executar-o-projeto)
-     * [Pré-requisitos](#pré-requisitos)
-     * [Rodando pelo VSCode)](#user-content--rodando-pelo-vscode)
-     * [Rodando pelo Docker)](#user-content--rodando-pelo-docker)
-     * [Testes)](#user-content--testes)
-   * [Deploy](#-deploy)
-   * [Tecnologias](#-tecnologias)
-   * [Autor](#-autor)
-   * [Licença](#user-content--licença)
+   * [Como executar o projeto](#como-executar-o-projeto)
+     * [Pré-requisitos pelo VSCode](#pré-requisitos-pelo-vscode)
+     * [Rodando pelo VSCode)](#rodando-pelo-vscode)
+     * [Pré-requisitos pelo Docker](#pré-requisitos-pelo-docker)
+     * [Rodando pelo Docker)](#rodando-pelo-docker)
+   * [Deploy](#deploy)
+   * [Tecnologias](#tecnologias)
+   * [Autor](#autor)
+   * [Licença](#licença)
 <!--te-->
 
 
