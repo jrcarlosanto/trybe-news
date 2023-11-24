@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { useContext } from 'react';
 import NoticesContext from '../../context/NoticesContext';
 import Button from '../ButtonRead';

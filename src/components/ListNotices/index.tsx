@@ -9,36 +9,11 @@ import { FAVORITE, SEARCHE_SUM_QUANTITY } from '../../utils/constants';
 function ListNotice() {
   const { listNotice, loadingList, setQuantity, quantity,
     setLoadingList, choiceList } = useContext(NoticesContext);
-  // const loaderRef = useRef(null);
   const options = {};
   const [ref, inView] = useInView(options);
-  // const [isVisible, setIsVisible] = useState(false);
-
   const listFavorite = (JSON.parse(localStorage
     .getItem('listFavorite') as string));
 
-  /*  const handleObserver = (entities: any[]) => {
-    const target = entities[0];
-    if (target.isIntersecting
-      && (quantity <= listFavorite.length || choiceList !== FAVORITE)) {
-      setQuantity(quantity + SEARCHE_SUM_QUANTITY);
-      setLoadingList(true);
-    }
-  };
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1,
-    };
-    const observer = new IntersectionObserver(handleObserver, options);
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current);
-    }
-    console.log(observer);
-  }, [scroll]);
-*/
   useEffect(() => {
     if (inView && (quantity <= listFavorite.length || choiceList !== FAVORITE)) {
       setQuantity(quantity + SEARCHE_SUM_QUANTITY);
@@ -66,7 +41,6 @@ function ListNotice() {
               link={ link }
             />)) }
         {listNotice.length === 0 && <H2>Lista Vazia</H2>}
-        {/* <p ref={ loaderRef } /> */}
         <p ref={ ref } data-testid="scroll" />
       </Section>
       {(loadingList && quantity >= SEARCHE_SUM_QUANTITY) && (

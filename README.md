@@ -12,6 +12,7 @@ Tabela de conteúdos
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando pelo VSCode)](#user-content--rodando-pelo-vscode)
      * [Rodando pelo Docker)](#user-content--rodando-pelo-docker)
+   * [Deploy](#-deploy)
    * [Tecnologias](#-tecnologias)
    * [Licença](#user-content--licença)
 <!--te-->
@@ -41,12 +42,16 @@ O layout da aplicação está disponível no Figma:
 
 <p align="center">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-web-dark.png" width="600px">
+
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/notfound-dark.png" width="600px">
 </p>
 
 #### Light Theme
 
 <p align="center">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-web-light.png" width="600px">
+
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/notfound-light.png" width="600px">
 </p>
 
 ### Mobile
@@ -110,12 +115,20 @@ Na raiz do projeto.
 # Clone este repositório
 $ git clone git@github.com:tgmarinho/README-ecoleta.git
 
-# Execute a aplicação com o docker compose
+# Execute a aplicação com o docker compose no segundo plano
 $ docker-compose up -d --build
+
+# Execute a aplicação com o docker compose para observar o terminal
+$ docker-compose up --build
 
 # O servidor inciará na porta:5173 - acesse http://localhost:5173 
 
 ```
+
+## Deploy
+
+- Feito no [Vercel](https://vercel.com/)
+- [Link](https://trybe-news-taupe.vercel.app/) da aplicação.
 
 ## Tecnologias
 

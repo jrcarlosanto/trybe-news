@@ -37,7 +37,6 @@ export default function PlanetsProvider({ children }: PlanetsProviderType) {
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
   const [loadingList, setLoadingList] = useState(false);
-  const [scroll, setScroll] = useState(false);
   const [reloadYoungestNotice, setReloadYoungestNotice] = useState(false);
 
   useEffect(() => {
@@ -46,16 +45,6 @@ export default function PlanetsProvider({ children }: PlanetsProviderType) {
         setYoungestNotice(response[0]);
         setLoading(false);
         setListNotice(response.slice(1, quantity));
-        /* const firstNotice = localStorage.getItem('firstNotice');
-        if (!firstNotice || JSON.parse(firstNotice).id !== response[0].id) {
-          getNotices()
-            .then((responseNotices) => localStorage
-              .setItem('listNotices', JSON.stringify(responseNotices.slice(1, 600))));
-          getReleases()
-            .then((responseReleases) => localStorage
-              .setItem('listReleases', JSON.stringify(responseReleases.slice(1, 600))));
-        } */
-        // localStorage.setItem('youngestNotice', JSON.stringify({ id: response[0].id }));
       });
   }, []);
 
@@ -65,14 +54,12 @@ export default function PlanetsProvider({ children }: PlanetsProviderType) {
         case MOST_RECENT: getNoticesAndReleases(quantity)
           .then((response) => setListNotice(response.slice(1, quantity)));
           break;
-        case RELEASE: /* setListNotice((JSON.parse(localStorage
-          .getItem('listReleases') as string).slice(0, quantity - 1))); */
-          getReleases().then((response) => setListNotice(response
+        case RELEASE: getReleases()
+          .then((response) => setListNotice(response
             .slice(0, quantity - 1)));
           break;
-        case NOTICE:/* setListNotice((JSON.parse(localStorage
-          .getItem('listNotices') as string).slice(0, quantity - 1))); */
-          getNotices().then((response) => setListNotice(response.slice(0, quantity - 1)));
+        case NOTICE: getNotices()
+          .then((response) => setListNotice(response.slice(0, quantity - 1)));
           break;
         case FAVORITE: setListNotice((JSON.parse(localStorage
           .getItem('listFavorite') as string).slice(0, quantity - 1)));
@@ -81,7 +68,6 @@ export default function PlanetsProvider({ children }: PlanetsProviderType) {
           .then((response) => setListNotice(response.slice(0, quantity - 1)));
       }
       setLoadingList(false);
-      setScroll(!scroll);
     }
   }, [choiceList, quantity, loadingList]);
 
@@ -102,7 +88,6 @@ export default function PlanetsProvider({ children }: PlanetsProviderType) {
         loadingList,
         search,
         setSearch,
-        scroll,
         reloadYoungestNotice,
         setReloadYoungestNotice,
       } }

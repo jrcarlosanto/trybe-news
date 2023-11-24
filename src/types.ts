@@ -20,7 +20,6 @@ export type NoticesContextType = {
   setQuantity: (value: number) => void;
   search: string;
   setSearch: (value: string) => void;
-  scroll: boolean;
   setReloadYoungestNotice: (value: boolean) => void;
   reloadYoungestNotice: boolean;
 };
