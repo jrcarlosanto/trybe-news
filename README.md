@@ -1,5 +1,9 @@
 # Create Trybe App
 
+<p align="center">
+<img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
+
 Tabela de conteúdos
 =================
 <!--ts-->
@@ -12,6 +16,7 @@ Tabela de conteúdos
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando pelo VSCode)](#user-content--rodando-pelo-vscode)
      * [Rodando pelo Docker)](#user-content--rodando-pelo-docker)
+     * [Testes)](#user-content--testes)
    * [Deploy](#-deploy)
    * [Tecnologias](#-tecnologias)
    * [Licença](#user-content--licença)
@@ -63,6 +68,8 @@ O layout da aplicação está disponível no Figma:
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-mobile-dark.png" width="200px">
 
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-mobile-dark-2.png" width="200px">
+
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/notfound-mobile-dark.png" width="200px">
 </p>
 
 #### Light Theme
@@ -71,12 +78,14 @@ O layout da aplicação está disponível no Figma:
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-mobile-light.png" width="200px">
 
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/cap-mobile-light-2.png" width="200px">
+
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="/assets/notfound-mobile-light.png" width="200px">
 </p>
 
 ## Como executar o projeto
 
 Este projeto pode ser executado de duas formas:
-1. Vite
+1. VSCode
 2. Docker Compose
 
 ### Pré-requisitos
@@ -124,7 +133,13 @@ $ docker-compose up --build
 
 # O servidor inciará na porta:5173 - acesse http://localhost:5173 
 
+# Execute o comando no terminal para encerar o docker
+
+$ docker-compose down
+
 ```
+
+##### Obs: Se ocorrer algum erro de EACCES: permission denied. Você excluir a pasta de node_modules.
 
 ## Deploy
 
@@ -145,6 +160,13 @@ $ docker-compose up --build
 - API: [IBGE](https://servicodados.ibge.gov.br/api/docs/noticias?versao=3)
 - Teste: [Vitest](https://vitest.dev/)
 
+
+## Autor
+
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Thiago Marinho</b></sub>
+ <br />
 
 ## Licença
 
