@@ -23,7 +23,7 @@ function Header({ toggleTheme, isDarkTheme }: HeaderType) {
       <HeaderNav>
         <img src={ logo } alt="logo" />
         <Div>
-          <h1>TRIBE NEWS</h1>
+          <h1>TRYBE NEWS</h1>
         </Div>
         <ButtonTheme onClick={ toggleTheme }>
           <img src={ isDarkTheme ? iconSun : iconMoon } alt="Toggle theme" />
