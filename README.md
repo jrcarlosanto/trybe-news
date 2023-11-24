@@ -104,7 +104,7 @@ $ npm run dev
 ```
 ### Pré-requisitos Docker Compose
 
-Segui os tutorias para a instalação do Docker(https://docs.docker.com/desktop/install/linux-install/) e Docker Compose(https://docs.docker.com/compose/install/)
+Segui os tutorias para a instalação do [Docker](https://docs.docker.com/desktop/install/linux-install/) e [Docker Compose](https://docs.docker.com/compose/install/)
 
 ### Rodando pelo Docker
 
